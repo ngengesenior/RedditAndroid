@@ -37,11 +37,21 @@ a [StaggeredGrid Layout Manager](https://developer.android.com/reference/android
 
 
 
+## Essence op Paging
+
+The essence of paging is to reduce bandwidth usage as the application makes it possible for data to be loaded in pages.
+
+We also avoid unnecessary freezing of the application if we had to load all the data and populate the recyclerview.
+
+
+
 
 
 
 
 ## Screens
+
+Here are some of the screens of the application
 
 ![Splash Screen](/home/badmus/AndroidStudioProjects/GameSubReddit/images/splash.png)
 
