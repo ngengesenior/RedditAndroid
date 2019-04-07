@@ -17,4 +17,9 @@
                 android:id="@+id/reditRecyclerview"
                 tools:listitem="@layout/list_item_layout"/>
     </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <ProgressBar android:layout_width="wrap_content"
+                 android:indeterminateTint="@android:color/black"
+                 android:layout_height="wrap_content" android:id="@+id/contentLoadingProgress"
+                 android:layout_centerHorizontal="true" android:layout_alignParentTop="true"
+                 android:layout_marginTop="11dp"/>
 </RelativeLayout>

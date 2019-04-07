@@ -3,15 +3,18 @@ package com.ngenge.gamesubreddit
 import android.content.ActivityNotFoundException
 import android.content.Intent
 import android.net.Uri
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
+import android.view.Window
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.ngenge.gamesubreddit.model.RedditPostItem
 import kotlinx.android.synthetic.main.activity_main.*
+
 
 class MainActivity : AppCompatActivity() {
     private lateinit var viewModel: RedditViewModel
@@ -20,15 +23,23 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         setContentView(R.layout.activity_main)
         viewModel = ViewModelProviders.of(this).get(RedditViewModel::class.java)
 
         swipeToRefresh.setOnRefreshListener {
             viewModel.refresh()
+
         }
+        //checkNetwork()
+
         initialiseAdapter()
 
+
+
     }
+
+
 
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
@@ -41,6 +52,7 @@ class MainActivity : AppCompatActivity() {
         {
             R.id.menu_refresh ->{
                 swipeToRefresh.isRefreshing = true
+
             }
 
         }
@@ -67,6 +79,7 @@ class MainActivity : AppCompatActivity() {
         viewModel.getRedditLiveData().observe(this, Observer {
             gameRedditListAdapter.submitList(it)
             swipeToRefresh.isRefreshing = false
+            contentLoadingProgress.visibility = View.GONE
         })
 
     }

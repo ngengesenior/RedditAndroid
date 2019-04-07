@@ -5,11 +5,14 @@
                                                    android:foreground="?android:attr/selectableItemBackground"
                                                    android:layout_height="wrap_content"
                                                    android:clickable="true"
-                                                   app:contentPadding="2dp"
+                                                   app:contentPadding="4dp"
                                                    android:focusable="true"
-                                                   app:cardUseCompatPadding="true">
+                                                   app:cardUseCompatPadding="true" app:cardElevation="4dp"
+>
     <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
                                                        android:layout_width="match_parent"
+                                                       android:paddingBottom="10dp"
+                                                       android:paddingTop="10dp"
                                                        android:layout_height="wrap_content">
 
         <TextView android:layout_width="0dp"
