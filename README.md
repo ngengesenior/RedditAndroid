@@ -53,7 +53,7 @@ We also avoid unnecessary freezing of the application if we had to load all the 
 
 Here are some of the screens of the application
 
-![Splash Screen](/home/badmus/AndroidStudioProjects/GameSubReddit/images/splash.png)
+![Splash Screen](./images/splash.png)
 
 
 
@@ -69,13 +69,13 @@ Here are some of the screens of the application
 
 
 
-![MainActivity](/home/badmus/AndroidStudioProjects/GameSubReddit/images/portrait.png)
-
+![MainActivity](./images/portrait.png)
+.
 
 
 ## MainActivity Landscape
 
-![MainaActivity Landscape](/home/badmus/AndroidStudioProjects/GameSubReddit/images/landscape.png)
+![MainaActivity Landscape](./images/landscape.png)
 
 
 
@@ -83,7 +83,7 @@ Here are some of the screens of the application
 
 ## MainActivity on Tablet
 
-![MainActivity Tablet](/home/badmus/AndroidStudioProjects/GameSubReddit/images/tablet.png)
+![MainActivity Tablet](./images/tablet.png)
 
 
 
@@ -95,4 +95,4 @@ Here are some of the screens of the application
 
 
 
-![Browser](/home/badmus/AndroidStudioProjects/GameSubReddit/images/browser.png)
+![Browser](./images/browser.png)
