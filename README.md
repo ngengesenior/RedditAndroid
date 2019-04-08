@@ -15,7 +15,7 @@ When item is clicked, it opens up the details in a browser.
 ## Libraries and stack
 
 
-All Code is written in [Koltin](https://kotlinlang.org)
+All Code is written in [Kotlin](https://kotlinlang.org)
 
 [Retrofits Library](https://square.github.io/retrofit/) is used to implement the Rest Api
 
